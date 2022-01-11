@@ -15,6 +15,11 @@ However, there are some requirements!
 - Each notebook you create should output data into their respective directories (`raw`, `interim`, `processed`)
 - You are only allowed to use `pandas` and notebooks. No other package or library may be used!
 
+## Prerequisites
+- python: ^3.*
+- pandas
+- jupyter
+
 ## Getting Started
 - `git clone git@github.com:QuinnManor/efuse-work-sample-DE.git`
 - `cd efuse-work-sample-DE`
@@ -28,7 +33,7 @@ However, there are some requirements!
     - data_sources/
     - notebooks/
     - README.md
-    - requirements.txt
+    - requirements.txt (optional)
 
 ## Evaluation Criteria
 I won't give too many details on this (for obvious reasons), but follow directions and send code that works. This means, if you're using `python 3.10.1` have a `requirements.txt` file and a `README` explaining how to run your code (there is more than one way to assure this, just make sure your code runs!).
