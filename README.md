@@ -1,39 +1,50 @@
-# My Project Name
-Short description of the project.
+# A Single Source of Truth!
+You've just been given an important initiative to help consolidate data across various sources starting with user data. More specifically, create a few notebooks (as many as you'd like, really!) that result in the final dataset looking something like this:
 
-## Live Project
-To view our application, click the link below:
+![This is an image](img.png)
 
-https://link-to-hosted-app.com/
+However, there are some requirements!
 
-## Running the App Locally
+## Requirements
+- Your notebooks must contain organized markdown providing readers with context of your thought process for various data processing tasks
+- Data should be imputed along the way. This means, if a user has a `date_of_birth` with no `age`, calculate the `age` based on `date_of_birth`
 
-The following sections will show you how to run the application locally.
+    **NOTE: Do this wherever you can**
+- Create columns that denote the type of device users interact with eFuse on
+- All data (columns and rows), should be standardized, following the same conventions
+- Each notebook you create should output data into their respective directories (`raw`, `interim`, `processed`)
+- You are only allowed to use `pandas` and notebooks. No other package or library may be used!
 
-### Prerequisites
-- tech_1: ^0.0
-- tech_2: ^0.0
-- tech_3: ^0.0
+## Getting Started
+- Download and unzip efuse-work-sample-DE.zip
 
-### Getting Started
-1. git clone https://github.com/github-user/project-name.git
-2. cd project-name
-3. python app.py
+## When You're Finished!
+- Email a zipped folder of your work with the convention `<Lastname_Firstname-efuse-work-sample-DE.zip>` to your recruiter. Meaning, for Matthew Quinn:
+    -  `Quinn_Matthew-efuse-work-sample-DE.zip`
+- Files/Directories to include in your zip:
+    - data/
+    - data_sources/
+    - notebooks/
+    - README.md
+    - requirements.txt
 
-### Running our test suite
-1. python test-app.py
+## Evaluation Criteria
+I won't give too many details on this (for obvious reasons), but follow directions and send code that works. This means, if you're using `python 3.10.1` have a `requirements.txt` file and a README explaining how to run your code.
 
 ## Project Organization
 ------------
-
-    ├── README.md  <- The top-level README for developers using this project.
+    ├── data
+    │   ├── interim        <- Intermediate data that has been transformed
+    │   ├── processed      <- The final, canonical datasets for modeling
+    │   └── raw            <- The original, immutable data dump
     │
-    ├── .gitignore  <- Specifies which files to ignore within the repository.
+    ├── data_sources       <- The various sources of user data
     │
-    ├── create_README.sh  <- Creates a README for users.
+    ├── notebooks          <- Where your data processing occurs
     │
-    ├── create_gitignore.sh  <- Creates a .gitignore for users.
+    ├── .gitignore         <- Specifies which files to ignore within the repository
     │
-    ├── setup_local_github_env.sh  <- Simple github setup for users.
-
+    ├── README.md          <- The top-level README for developers using this project
+    │
+    ├── img.png            <- Image referenced in this README
 --------
