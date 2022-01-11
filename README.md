@@ -16,7 +16,9 @@ However, there are some requirements!
 - You are only allowed to use `pandas` and notebooks. No other package or library may be used!
 
 ## Getting Started
-- Download and unzip efuse-work-sample-DE.zip
+- `git clone git@github.com:QuinnManor/efuse-work-sample-DE.git`
+- `cd efuse-work-sample-DE`
+- `jupyter notebook`
 
 ## When You're Finished!
 - Email a zipped folder of your work with the convention `<Lastname_Firstname-efuse-work-sample-DE.zip>` to your recruiter. Meaning, for Matthew Quinn:
@@ -29,7 +31,7 @@ However, there are some requirements!
     - requirements.txt
 
 ## Evaluation Criteria
-I won't give too many details on this (for obvious reasons), but follow directions and send code that works. This means, if you're using `python 3.10.1` have a `requirements.txt` file and a README explaining how to run your code.
+I won't give too many details on this (for obvious reasons), but follow directions and send code that works. This means, if you're using `python 3.10.1` have a `requirements.txt` file and a `README` explaining how to run your code (there is more than one way to assure this, just make sure your code runs!).
 
 ## Project Organization
 ------------
@@ -38,7 +40,9 @@ I won't give too many details on this (for obvious reasons), but follow directio
     │   ├── processed      <- The final, canonical datasets for modeling
     │   └── raw            <- The original, immutable data dump
     │
-    ├── data_sources       <- The various sources of user data
+    ├── data_sources
+    │   ├── mongo          <- User data from MongoDB
+    │   ├── segment        <- User data from various Segment sources
     │
     ├── notebooks          <- Where your data processing occurs
     │
